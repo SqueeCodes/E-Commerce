@@ -140,10 +140,18 @@ h2 {
   padding: 56px 0;
 }
 
-.row {
+.row 
+.row__column {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.row__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
  /*HIGHLIGHTS*/
@@ -277,4 +285,41 @@ h2 {
   text-decoration: line-through;
   padding-right: 6px;
   color: #bfbfbf;
+}
+
+/* MOST POPULAR */
+
+#most__popular::before {
+  background: url('assets/wave.svg');
+  content:"";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  top: 1;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
+
+/*FOOTER*/
+
+#footer_container::before {
+  background: url('assets/wave.svg');
+  content:"";
+  position: absolute;
+  width: 101vw;
+  height: 12vw;
+  top: 1;
+  left: 0;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-100%);
+}
+
+
+.footer__container {
+  background-color: rgba(115, 66, 214, 0.1 );
 }
